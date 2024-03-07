@@ -7,6 +7,100 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="150"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="170"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="200"/>
+        </Grid.ColumnDefinitions>
 
+        <Label Grid.Row="0" Grid.Column="0" Content="Menu" Grid.ColumnSpan="3" FontSize="14" FontWeight="Bold">
+            <Label.Background>
+                <ImageBrush ImageSource="/Menu.PNG"/>
+            </Label.Background>
+        </Label>
+
+        <Grid Grid.Row="1" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="16*"/>
+                <ColumnDefinition Width="69*"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Content="Player information" Margin="0,0,0,134" Grid.RowSpan="2" Grid.ColumnSpan="2" FontSize="16" FontWeight="Bold">
+                <Label.Background>
+                    <ImageBrush ImageSource="/player infor.PNG"/>
+                </Label.Background>
+            </Label>
+            <Label Grid.Row="1" Grid.Column="0" Content="Player image" Margin="0,121,0,2" Grid.ColumnSpan="2">
+                <Label.Background>
+                    <ImageBrush ImageSource="/1123123.PNG"/>
+                </Label.Background>
+            </Label>
+        </Grid>
+
+        <Label Grid.Row="1" Content="Inventory and Quests" Margin="-5,255,5,0" Grid.RowSpan="2" FontWeight="Bold" FontSize="14">
+            <Label.Background>
+                <ImageBrush ImageSource="/inventory.PNG"/>
+            </Label.Background>
+        </Label>
+        <Label Grid.Row="1" Grid.Column="1" Content="Game messages" FontWeight="Bold" FontSize="14">
+            <Label.Background>
+                <ImageBrush ImageSource="/game messages.PNG"/>
+            </Label.Background>
+        </Label>
+
+        <Grid Grid.Row="2" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0" Content="Item information" Grid.ColumnSpan="2" Margin="-5,0,215,0" Height="171" VerticalAlignment="Center" FontWeight="Bold" FontSize="14">
+                <Label.Background>
+                    <ImageBrush ImageSource="/Capture.PNG"/>
+                </Label.Background>
+            </Label>
+            <Label Grid.Row="0" Grid.Column="1" Content="Item buttons" Margin="215,0,0,0" Height="160" VerticalAlignment="Top" FontWeight="Bold" FontSize="14">
+                <Label.Background>
+                    <ImageBrush ImageSource="/Capture.PNG"/>
+                </Label.Background>
+            </Label>
+        </Grid>
+
+        <Grid Grid.Row="1" Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Content="Location information" Margin="0,0,0,129" FontWeight="Bold" FontSize="14">
+                <Label.Background>
+                    <ImageBrush ImageSource="/loc.PNG"/>
+                </Label.Background>
+            </Label>
+            <Label Grid.Column="0" Content="Enemy information" Margin="-2,125,0,0" FontWeight="Bold" FontSize="14">
+                <Label.Background>
+                    <ImageBrush ImageSource="/1123123.PNG"/>
+                </Label.Background>
+            </Label>
+        </Grid>
+
+        <Label Grid.Row="1" Grid.Column="2" Content="Navigation Buttons" Margin="0,255,0,0" Grid.RowSpan="2" FontWeight="Bold" FontSize="14" HorizontalAlignment="Center" Width="200">
+            <Label.Background>
+                <ImageBrush ImageSource="/navi.PNG"/>
+            </Label.Background>
+        </Label>
     </Grid>
+
 </Window>
